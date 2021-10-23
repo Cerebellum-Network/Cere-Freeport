@@ -2,7 +2,7 @@
 
 ## Mission statement
 
-NFT backed assets lack security and ownership. The Cere Freeport Decentralized Data Vault is the first solution to solve this problem. 
+Today's NFT backed assets lack security and true ownership. The Cere Freeport (Decentralized Data Vault for NFT) is the first open and decentralized solution for this problem. 
 
 This page provides a quick tutorial on the Freeport Creator Suite and a Quick Start Guide with documentation. It includes a set of Smart Contracts to deal with NFT (ERC1155) and auctions,
 high-level services for Cere Decentralised Data Cloud (DDC) to store and retrieve assets and metadata, and a Creator Suite - front-end
@@ -16,7 +16,7 @@ Connect your Wallet, Create NFTs and view created NFTs.
 
 ## Modules overview
 
-Building own solutions is challenging and centralized. Build your NFT app on Freeport with help of the documentation below.
+Building your own custom secure asset solutions for NFT's is challenging and very hard to decentralize. Cere Freeport is the all-in-one solution that helps you to launch NFT-backed features into your app much faster, all the features including minting NFT's, uploading NFT-based assets to Cere DDC (decentralized data cloud), configuring royalties, and even enabling permissioned NFT! The documentations below are the starting points (will be continously updated in the coming days):
 
 |Name|Description|Status|Documentation|
 |---|---|---|---|
