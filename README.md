@@ -1,4 +1,4 @@
-# Cere-Freeport
+# Freeport
 **Introduction**
 An overview of the documentation to build the tool suite supporting Cere Freeport:
 - [Back-end API](https://github.com/Cerebellum-Network/davinci-api): Freeport Back-end API
