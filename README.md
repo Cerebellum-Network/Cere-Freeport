@@ -2,9 +2,11 @@
 
 ## Mission statement
 
-Cere Freeport is a tool suite to build NFT platform. It includes a set of Smart Contracts to deal with NFT (ERC1155) and auctions, 
-high-level services for Cere Decentralised Data Cloud (DDC) to store and retrieve assets and metadata and Creator Suite - front-end 
-application for NFT minting and assets upload.
+NFT backed assets lack security and ownership.
+Cere Freeport is a tool suite to build NFT platform. It includes a set of Smart Contracts to deal with NFT (ERC1155) and auctions,
+high-level services for Cere Decentralised Data Cloud (DDC) to store and retrieve assets and metadata and Creator Suite - front-end
+application for NFT minting and assets upload. 
+This page provides a quick tutorial on the Freeport Creator Suite and a Quick Start Guide with documentation.
 
 ## Modules overview
 
@@ -16,3 +18,6 @@ application for NFT minting and assets upload.
 |[Freeport Media Service](https://github.com/Cerebellum-Network/Freeport-Media-Service)|High-level HTTP API to deal with assets in DDC|Private (will be public soon)|[Swagger](https://media.ddc.dev.cere.network/q/swagger-ui/)|
 |[Freeport Creator Suite](https://github.com/Cerebellum-Network/Freeport-Creator-Suite)|UI for minting NFTs, upload assets and configure metadata|Private (will be public soon)||
 
+## Quick start guide
+
+Building own solutions is challenging and centralized. Build your NFT app on Freeport with help of the documentation below.
