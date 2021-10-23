@@ -12,7 +12,7 @@ application for NFT minting and asset uploads.
 
 Connect your Wallet, Create NFTs and view created NFTs.
 
-![Tutorial](https://user-images.githubusercontent.com/5919565/138560878-6ea4d6bc-a672-4a18-bc4e-6a76c205d20f.gif)
+![Tutorial](https://user-images.githubusercontent.com/5919565/138561407-f5488c7b-e678-4292-8189-c7ab926d5734.gif)
 
 ## Modules overview
 
