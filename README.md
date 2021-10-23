@@ -10,6 +10,7 @@ application for NFT minting and asset uploads.
 
 ## Tutorial
 
+https://user-images.githubusercontent.com/5919565/138560394-3a44f7a1-abbc-465d-99cb-b0b1297763c6.mov
 
 ## Modules overview
 
