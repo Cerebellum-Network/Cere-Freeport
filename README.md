@@ -24,5 +24,4 @@ Building your own custom secure asset solutions for NFT's is challenging and ver
 |[Freeport S.C. Event Processor](https://github.com/Cerebellum-Network/Freeport-S.C.-Event-Processor)|Listens for events of Freeport Smart Contracts, calculates the state and stores it in DDC|Public (Apache 2.0 License)|[Readme](https://github.com/Cerebellum-Network/Freeport-S.C.-Event-Processor/blob/dev/README.md)|
 |[Freeport Creator Suite](https://github.com/Cerebellum-Network/Freeport-Creator-Suite)|UI for minting NFTs, upload assets and configure metadata|Private (soon public)||
 |[Freeport Media Service](https://github.com/Cerebellum-Network/Freeport-Media-Service)|High-level HTTP API to deal with assets in DDC|Private (soon public)|[Swagger](https://media.ddc.dev.cere.network/q/swagger-ui/)|
-|[Freeport Creator Suite](https://github.com/Cerebellum-Network/Freeport-Creator-Suite)|UI for minting NFTs, upload assets and configure metadata|Private (soon public)||
 |[Freeport DDC Gateway](https://github.com/Cerebellum-Network/Freeport-DDC-Gateway)|HTTP API for Freeport client applications|Private (soon public)||
