@@ -19,9 +19,9 @@ Connect your Wallet, Create NFTs and view created NFTs.
 Building your own custom secure asset solutions for NFT's is challenging and very hard to decentralize. Cere Freeport is the all-in-one solution that helps you to launch NFT-backed features into your app much faster, all the features including minting NFT's, uploading NFT-based assets to Cere DDC (Decentralized Data Cloud), configuring royalties, and even enabling permissioned NFT! 
 Our team has all documentation you need prepared and ready to be used. The quickstart guide (coming soon) provides you with an overview of how to use Freeport and integrate it with your app or game. There are even several options to choose from based on your preferred set-up. A high-level overview for connecting Freeport to other software:
 1. Push model 
-* Basic Freeport CMS or your own CMS
-* Backend Services
-4. Pull model
+*Basic Freeport CMS or your own CMS
+*Backend Services
+2. Pull model
 
 Integrate and start using Freeport right now with help of our quickstart guide (coming soon). 
 
