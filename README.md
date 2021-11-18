@@ -14,9 +14,20 @@ Connect your Wallet, Create NFTs and view created NFTs.
 
 ![Tutorial](https://user-images.githubusercontent.com/5919565/138561407-f5488c7b-e678-4292-8189-c7ab926d5734.gif)
 
+## Quickstart guide
+
+Building your own custom secure asset solutions for NFT's is challenging and very hard to decentralize. Cere Freeport is the all-in-one solution that helps you to launch NFT-backed features into your app much faster, all the features including minting NFT's, uploading NFT-based assets to Cere DDC (Decentralized Data Cloud), configuring royalties, and even enabling permissioned NFT! 
+Our team has all documentation you need prepared and ready to be used. The quickstart guide (coming soon) provides you with an overview of how to use Freeport and integrate it with your app or game. There are even several options to choose from based on your preferred set-up. A high-level overview for connecting Freeport to other software:
+1. Push model 
+  a. Basic Freeport CMS or your own CMS
+  b. Backend Services
+2. Pull model
+
+Integrate and start using Freeport right now with help of our quickstart guide (coming soon). 
+
 ## Modules overview
 
-Building your own custom secure asset solutions for NFT's is challenging and very hard to decentralize. Cere Freeport is the all-in-one solution that helps you to launch NFT-backed features into your app much faster, all the features including minting NFT's, uploading NFT-based assets to Cere DDC (Decentralized Data Cloud), configuring royalties, and even enabling permissioned NFT! The documentations below are the starting points (will be continuously updated the coming days):
+The documentations below are the starting points (will be continuously updated along the way):
 
 |Name|Description|Status|Documentation|
 |---|---|---|---|
@@ -25,3 +36,5 @@ Building your own custom secure asset solutions for NFT's is challenging and ver
 |[Freeport Creator Suite](https://github.com/Cerebellum-Network/Freeport-Creator-Suite)|UI for minting NFTs, upload assets and configure metadata|Private (soon public)||
 |[Freeport Media Service](https://github.com/Cerebellum-Network/Freeport-Media-Service)|High-level HTTP API to deal with assets in DDC|Private (soon public)|[Swagger](https://media.ddc.dev.cere.network/q/swagger-ui/)|
 |[Freeport DDC Gateway](https://github.com/Cerebellum-Network/Freeport-DDC-Gateway)|HTTP API for Freeport client applications|Private (soon public)||
+
+We’re here to help with any questions and can assist with end-to-end implementation services. Do not hestitate to reach out.
