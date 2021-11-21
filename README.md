@@ -32,4 +32,4 @@ The documentations below are the starting points (will be continuously updated a
 |[Freeport Media Service](https://github.com/Cerebellum-Network/Freeport-Media-Service)|High-level HTTP API to deal with assets in DDC|Private (soon public)|[Swagger](https://media.ddc.dev.cere.network/q/swagger-ui/)|
 |[Freeport DDC Gateway](https://github.com/Cerebellum-Network/Freeport-DDC-Gateway)|HTTP API for Freeport client applications|Private (soon public)||
 
-We’re here to help with any questions and can assist with end-to-end implementation services. Do not hestitate to reach out.
+We’re here to help with. Freeport is currently an alpha release version. You can start using Freeport immediately. The Cere team will support with any technical challenges and will assist with enabling a data push/pull so you are all set to integrate your minted NFTs in your app or game. Do not hestitate to reach out.
