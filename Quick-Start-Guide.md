@@ -28,7 +28,7 @@ Custom set-up (upon request)
 
 
 ## High-level steps (incl. links to documentation)
-1. Use the Freeport Creator Suite to mint the NFTs ([Freeport Creator Suite](https://github.com/Cerebellum-Network/Freeport-Creator-Suite))
+1. Use the Freeport Creator Suite to mint the NFTs
 2. Integrate the Cere SDK in your app/game (SDK documentation)
 3. Distribute NFTs to users everywhere (in-game & marketplaces)
 4. Receive partner grants in $CERE based on activity milestones reached
