@@ -5,7 +5,7 @@ Freeport is currently an alpha release version. You can start using Freeport imm
 
 ## Table of contents
 * Who is this guide meant for
-* High-level steps (incl. links to documentation)
+* High-level steps
 * Minimal requirements
 * How to use Freeport
 * How to integrate the Cere SDK in your app or game
@@ -27,7 +27,7 @@ Custom set-up (upon request)
 * Polkadot-compatible wallet with Cere tokens for DDC usage
 
 
-## High-level steps (incl. links to documentation)
+## High-level steps
 1. Use the Freeport Creator Suite to mint the NFTs
 2. Integrate the Cere SDK in your app/game (SDK documentation)
 3. Distribute NFTs to users everywhere (in-game & marketplaces)
