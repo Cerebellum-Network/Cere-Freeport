@@ -34,7 +34,7 @@ Custom set-up (upon request)
 4. Receive partner grants in $CERE based on activity milestones reached
 
 ## How to use Freeport
-Use the Freeport Creator Suite (staging environment) nto mint your NFTs and securely add data relevant for your use case. The following steps explain you how to create NFTs with Freeport:
+Use the Freeport Creator Suite (staging environment) to mint your NFTs and securely add data relevant for your use case. The following steps explain you how to create NFTs with Freeport:
 1. Go to [Freeport (staging environment)](https://davinci.stage.cere.network)  
 2. Connect your wallet
 3. Mint NFTs (smart contract call from UI)
