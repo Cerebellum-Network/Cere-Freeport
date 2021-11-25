@@ -41,7 +41,7 @@ Use the Freeport Creator Suite (staging environment) to mint your NFTs and secur
 4. Configure NFTs (pricing, royalties, auction etc.)
 5. Upload data/assets to Cere DDC(smart contract call from UI)
 
-Note: DDC usage is currently free of charge. Freeport is accessible to test in our staging environment. We will provide you with access to production when we help to connect your app or game to Freeport. 
+Note: DDC usage is currently free of charge. Freeport is accessible to test in our staging environment. We will provide you with access to the production environment when we assist you in connecting your app or game to Freeport. 
 
 ## How to connect Freeport to your app or game
 With regards to integration there are even several options to choose from based on your preferred set-up. The Cere team will support with any technical challenges and will assist with enabling a data push/pull so you are all set to integrate your minted NFTs in your app or game. 
