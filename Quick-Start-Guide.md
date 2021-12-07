@@ -17,7 +17,7 @@ This repo aims to be beneficial to applications & developers who are looking to 
 ## Minimal requirements
 Current stage (alpha preview)
 
-* Web3 wallet (e. g. [Metamask](https://metamask.io/) with Matic/Polygon tokens.
+* Web3 wallet (e. g. [Metamask](https://metamask.io/) with Matic/Polygon tokens)
 
 In future
 * Polkadot-compatible wallet with Cere tokens for DDC usage
@@ -36,7 +36,7 @@ Custom set-up (upon request)
 ## How to use Freeport
 Use the Freeport Creator Suite (staging environment) to mint your NFTs and securely add data relevant for your use case. The following steps explain you how to create NFTs with Freeport:
 1. Go to [Freeport (staging environment)](https://davinci.stage.cere.network)  
-2. Connect your wallet (Web3 wallet e. g. [Metamask](https://metamask.io/) )
+2. Connect your wallet (Web3 wallet e. g. [Metamask](https://metamask.io/))
 3. Mint NFTs (smart contract call from UI)
 4. Configure NFTs (pricing, royalties, auction etc.)
 5. Upload data/assets to Cere DDC(smart contract call from UI)
