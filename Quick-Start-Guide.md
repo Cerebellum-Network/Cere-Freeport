@@ -36,7 +36,7 @@ Custom set-up (upon request)
 ## How to use Freeport
 Use the Freeport Creator Suite (staging environment) to mint your NFTs and securely add data relevant for your use case. The following steps explain you how to create NFTs with Freeport:
 1. Go to [Freeport (staging environment)](https://davinci.stage.cere.network)  
-2. Connect your wallet (Web3 wallet e. g. [Metamask](https://metamask.io/))
+2. Connect your wallet (Web3 wallet e. g. [Metamask](https://metamask.io/) )
 3. Mint NFTs (smart contract call from UI)
 4. Configure NFTs (pricing, royalties, auction etc.)
 5. Upload data/assets to Cere DDC(smart contract call from UI)
