@@ -29,7 +29,7 @@ The documentations below are the starting points (will be continuously updated a
 |[Freeport Smart Contracts SDK](https://github.com/Cerebellum-Network/Freeport-Smart-Contracts-SDK)|The JavaScript SDK of Freeport|Public (Apache 2.0 License)|[Readme](https://github.com/Cerebellum-Network/Freeport-Smart-Contracts-SDK/blob/master/README.md)|
 |[Freeport S.C. Event Processor](https://github.com/Cerebellum-Network/Freeport-S.C.-Event-Processor)|Listens for events of Freeport Smart Contracts, calculates the state and stores it in DDC|Public (Apache 2.0 License)|[Readme](https://github.com/Cerebellum-Network/Freeport-S.C.-Event-Processor/blob/dev/README.md)|
 |[Freeport Creator Suite](https://github.com/Cerebellum-Network/Freeport-Creator-Suite)|UI for minting NFTs, upload assets and configure metadata|Private (soon public)||
-|[Freeport Media Service](https://github.com/Cerebellum-Network/Freeport-Media-Service)|High-level HTTP API to deal with assets in DDC|Private (soon public)|[Swagger](https://media.ddc.dev.cere.network/q/swagger-ui/)|
-|[Freeport DDC Gateway](https://github.com/Cerebellum-Network/Freeport-DDC-Gateway)|HTTP API for Freeport client applications|Private (soon public)||
+|[Freeport DDC Proxy](https://github.com/Cerebellum-Network/Freeport-Media-Service)|High-level HTTP API to deal with assets in DDC|Private (soon public)|[Swagger](https://media.ddc.dev.cere.network/q/swagger-ui/)|
+|[Freeport API](https://github.com/Cerebellum-Network/Freeport-DDC-Gateway)|HTTP API for Freeport client applications|Private (soon public)||
 
 We’re here to help with. Freeport is currently an alpha release version. You can start using Freeport immediately. The Cere team will support with any technical challenges and will assist with enabling a data push/pull so you are all set to integrate your minted NFTs in your app or game. Do not hestitate to reach out.
