@@ -33,3 +33,25 @@ The documentations below are the starting points (will be continuously updated a
 |[Freeport API](https://github.com/Cerebellum-Network/Freeport-DDC-Gateway)|HTTP API for Freeport client applications|Private (soon public)||
 
 We’re here to help with. Freeport is currently an alpha release version. You can start using Freeport immediately. The Cere team will support with any technical challenges and will assist with enabling a data push/pull so you are all set to integrate your minted NFTs in your app or game. Do not hestitate to reach out.
+
+## Run all services with Docker Compose
+
+1. Create your own API key in [Covalent](https://www.covalenthq.com).
+2. Navigate to `docker-compose/` directory `cd docker-compose/`.
+3. Put your API key in the `.env` file.
+4. Run `docker-compose -f docker-compose-all-dev.yaml up -d` to start all services.
+
+The following services will be exposed:
+
+- Freeport API at port 8080 (http://localhost:8080/q/swagger-ui)
+- Freeport DDC proxy at port 8081 (http://localhost:8081/q/swagger-ui)
+- DDC Cluster with 3 nodes at ports 8888, 8881, 8882
+- S3 service at port 9000 (region: `us-east-1`, access key id: `test-key`, secret access key: `test-secret`)
+- PostgreSQL at port 5432 (user: `pg`, password: `pwd`, database: `freeport`)
+
+Test DDC keys:
+- Public: `0xdab1b135fbeb366b9a3a2e63d6e05152998dd3046cd91344a615f5ed82c2b431`
+- Private: `0xd840107172a79d69287e424a4c2a4f673e59a0510948e37a3a1c9458da4b9371`
+
+Current version of the Docker compose file is pointed to development environment and uses smart contracts from Polygon Mumbai Testnet.
+You might need to wait some time until data from chain will be synchronized with local database.
