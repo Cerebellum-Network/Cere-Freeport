@@ -1,0 +1,179 @@
+version: "3"
+
+services:
+  ddc-node-0:
+    container_name: 'ddc-node-0'
+    image: 'cerebellumnetwork/ddc-node:v0.29.0-RC1'
+    environment:
+      - 'HTTP_PORT=8888'
+      - 'HTTP_ADDRESS=http://ddc-node-0:8888'
+      - 'P2P_ADDRESS=/dns4/ddc-node-0/tcp/5000'
+      - 'P2P_WHITELIST=12D3KooWJLuJEmtYf3bakUwe2q1uMcnbCBKRg7GkpG6Ws74Aq6NC,12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu,12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b,12D3KooWMDTP72eAEpTn34PCP4Pe1eKSMt7PbQGs2TsVYysXeuZf,12D3KooWQgWdrDD5gasMnWAxNhcmtxGm3ucXheNK9uzzw2dt2FhK,12D3KooWBTgBvQHbqRhMyERYr39h6YPK7iZHnVv12oJJhZLjuwBx'
+      - 'LOG_LEVEL=debug'
+      - 'FAULT_DETECTION_HEARTBEAT_INTERVAL=1s'
+      - 'FAULT_DETECTION_UPDATE_NEIGHBORS_INTERVAL=1s'
+      - 'FAULT_DETECTION_SHORT_TRANSIENT_FAULT_TIMEOUT=4s'
+      - 'FAULT_DETECTION_LONG_TRANSIENT_FAULT_TIMEOUT=20s'
+      - 'FAULT_DETECTION_COMPLETE_FAULT_TIMEOUT=40s'
+      - 'STORAGE=270000000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_SIZE_LIMIT_BYTES=10000000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_WCU_LIMIT=180000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_RCU_LIMIT=450000000'
+      - 'TEST_ENABLED=true'
+      - 'TRUSTED_NODES=12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT,12D3KooWJLuJEmtYf3bakUwe2q1uMcnbCBKRg7GkpG6Ws74Aq6NC,12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu,12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b,12D3KooWMDTP72eAEpTn34PCP4Pe1eKSMt7PbQGs2TsVYysXeuZf,12D3KooWQgWdrDD5gasMnWAxNhcmtxGm3ucXheNK9uzzw2dt2FhK,12D3KooWBTgBvQHbqRhMyERYr39h6YPK7iZHnVv12oJJhZLjuwBx'
+      - 'TEST_APP_LIMIT={"storageBytes":100000000,"wcu":90000000,"rcu":225000000}'
+      - 'TEST_DDC_NODES=[{"p2pAddr":"/dns4/ddc-node-0/tcp/5000/p2p/12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT","permissions":1},{"p2pAddr":"/dns4/ddc-node-1/tcp/5001/p2p/12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu","permissions":1},{"p2pAddr":"/dns4/ddc-node-2/tcp/5002/p2p/12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b","permissions":1}]'
+    ports:
+      - '8888:8888'
+    volumes:
+      - ./node-0-p2p-config.json:/config/p2p.json
+  ddc-node-1:
+    container_name: 'ddc-node-1'
+    image: 'cerebellumnetwork/ddc-node:v0.29.0-RC1'
+    environment:
+      - 'HTTP_PORT=8881'
+      - 'HTTP_ADDRESS=http://ddc-node-1:8881'
+      - 'P2P_ADDRESS=/dns4/ddc-node-1/tcp/5001'
+      - 'P2P_BOOTNODES=/dns4/ddc-node-0/tcp/5000/p2p/12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT'
+      - 'P2P_WHITELIST=12D3KooWJLuJEmtYf3bakUwe2q1uMcnbCBKRg7GkpG6Ws74Aq6NC,12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT,12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b,12D3KooWQgWdrDD5gasMnWAxNhcmtxGm3ucXheNK9uzzw2dt2FhK,12D3KooWBTgBvQHbqRhMyERYr39h6YPK7iZHnVv12oJJhZLjuwBx'
+      - 'LOG_LEVEL=debug'
+      - 'FAULT_DETECTION_HEARTBEAT_INTERVAL=1s'
+      - 'FAULT_DETECTION_UPDATE_NEIGHBORS_INTERVAL=1s'
+      - 'FAULT_DETECTION_SHORT_TRANSIENT_FAULT_TIMEOUT=4s'
+      - 'FAULT_DETECTION_LONG_TRANSIENT_FAULT_TIMEOUT=20s'
+      - 'FAULT_DETECTION_COMPLETE_FAULT_TIMEOUT=40s'
+      - 'STORAGE=270000000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_SIZE_LIMIT_BYTES=10000000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_WCU_LIMIT=180000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_RCU_LIMIT=450000000'
+      - 'TEST_ENABLED=true'
+      - 'TRUSTED_NODES=12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT,12D3KooWJLuJEmtYf3bakUwe2q1uMcnbCBKRg7GkpG6Ws74Aq6NC,12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu,12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b,12D3KooWMDTP72eAEpTn34PCP4Pe1eKSMt7PbQGs2TsVYysXeuZf,12D3KooWQgWdrDD5gasMnWAxNhcmtxGm3ucXheNK9uzzw2dt2FhK,12D3KooWBTgBvQHbqRhMyERYr39h6YPK7iZHnVv12oJJhZLjuwBx'
+      - 'TEST_APP_LIMIT={"storageBytes":100000000,"wcu":90000000,"rcu":225000000}'
+      - 'TEST_DDC_NODES=[{"p2pAddr":"/dns4/ddc-node-0/tcp/5000/p2p/12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT","permissions":1},{"p2pAddr":"/dns4/ddc-node-1/tcp/5001/p2p/12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu","permissions":1},{"p2pAddr":"/dns4/ddc-node-2/tcp/5002/p2p/12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b","permissions":1}]'
+    ports:
+      - '8881:8881'
+    volumes:
+      - ./node-1-p2p-config.json:/config/p2p.json
+    depends_on:
+      - 'ddc-node-0'
+  ddc-node-2:
+    container_name: 'ddc-node-2'
+    image: 'cerebellumnetwork/ddc-node:v0.29.0-RC1'
+    environment:
+      - 'HTTP_PORT=8882'
+      - 'HTTP_ADDRESS=http://ddc-node-2:8882'
+      - 'P2P_ADDRESS=/dns4/ddc-node-2/tcp/5002'
+      - 'P2P_BOOTNODES=/dns4/ddc-node-0/tcp/5000/p2p/12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT'
+      - 'P2P_WHITELIST=12D3KooWJLuJEmtYf3bakUwe2q1uMcnbCBKRg7GkpG6Ws74Aq6NC,12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT,12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu,12D3KooWQgWdrDD5gasMnWAxNhcmtxGm3ucXheNK9uzzw2dt2FhK,12D3KooWBTgBvQHbqRhMyERYr39h6YPK7iZHnVv12oJJhZLjuwBx'
+      - 'LOG_LEVEL=debug'
+      - 'FAULT_DETECTION_HEARTBEAT_INTERVAL=1s'
+      - 'FAULT_DETECTION_UPDATE_NEIGHBORS_INTERVAL=1s'
+      - 'FAULT_DETECTION_SHORT_TRANSIENT_FAULT_TIMEOUT=4s'
+      - 'FAULT_DETECTION_LONG_TRANSIENT_FAULT_TIMEOUT=20s'
+      - 'FAULT_DETECTION_COMPLETE_FAULT_TIMEOUT=40s'
+      - 'STORAGE=270000000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_SIZE_LIMIT_BYTES=10000000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_WCU_LIMIT=180000000'
+      - 'BEHAVIOUR_STORAGE_PARTITION_RCU_LIMIT=450000000'
+      - 'TEST_ENABLED=true'
+      - 'TRUSTED_NODES=12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT,12D3KooWJLuJEmtYf3bakUwe2q1uMcnbCBKRg7GkpG6Ws74Aq6NC,12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu,12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b,12D3KooWMDTP72eAEpTn34PCP4Pe1eKSMt7PbQGs2TsVYysXeuZf,12D3KooWQgWdrDD5gasMnWAxNhcmtxGm3ucXheNK9uzzw2dt2FhK,12D3KooWBTgBvQHbqRhMyERYr39h6YPK7iZHnVv12oJJhZLjuwBx'
+      - 'TEST_APP_LIMIT={"storageBytes":100000000,"wcu":90000000,"rcu":225000000}'
+      - 'TEST_DDC_NODES=[{"p2pAddr":"/dns4/ddc-node-0/tcp/5000/p2p/12D3KooWFRkkd4ycCPYEmeBzgfkrMrVSHWe6sYdgPo1JyAdLM4mT","permissions":1},{"p2pAddr":"/dns4/ddc-node-1/tcp/5001/p2p/12D3KooWJ2h8af9sehgTKg6f2yPWYxLryVYbTAzpYQLLFp5GErxu","permissions":1},{"p2pAddr":"/dns4/ddc-node-2/tcp/5002/p2p/12D3KooWPfi9EtgoZHFnHh1at85mdZJtj7L8n94g6LFk6e8EEk2b","permissions":1}]'
+    ports:
+      - '8882:8882'
+    volumes:
+      - ./node-2-p2p-config.json:/config/p2p.json
+    depends_on:
+      - 'ddc-node-0'
+      - 'ddc-node-1'
+  init-ddc:
+    container_name: 'init-ddc'
+    image: 'curlimages/curl'
+    deploy:
+      restart_policy:
+        condition: 'on-failure'
+    command:
+      - 'curl'
+      - '-location'
+      - '--request'
+      - 'POST'
+      - 'http://ddc-node-0:8888/api/rest/apps'
+      - '--header'
+      - 'Content-Type: application/json'
+      - '--data-raw'
+      - '{"appPubKey":"0xdab1b135fbeb366b9a3a2e63d6e05152998dd3046cd91344a615f5ed82c2b431","signature":"0x4e4a723c46fcc5b957bcffa517ef9e1396eb6db19684aaea55b1f0414b848361a42c144145eba119531321db51adaeae0d1b9e5db63e9cf756e99c4db8e46481"}'
+    depends_on:
+      - 'ddc-node-0'
+      - 'ddc-node-1'
+      - 'ddc-node-2'
+  s3:
+    container_name: 's3'
+    image: 'bitnami/minio:latest'
+    environment:
+      - 'MINIO_ACCESS_KEY=test-key'
+      - 'MINIO_SECRET_KEY=test-secret'
+      - 'MINIO_DEFAULT_BUCKETS=ddc-private-assets'
+    ports:
+      - '9000:9000'
+  postgresql:
+    container_name: 'postgresql'
+    image: 'postgres:alpine'
+    ports:
+      - '5432:5432'
+    environment:
+      - 'POSTGRES_USER=pg'
+      - 'POSTGRES_PASSWORD=pwd'
+      - 'POSTGRES_DB=freeport'
+  freeport-sc-event-listener:
+    container_name: 'freeport-sc-event-listener'
+    image: 'cerebellumnetwork/freeport-sc-event-listener:dev-latest'
+    environment:
+      - 'DDC_ENABLED=false'
+      - 'CMS_ENABLED=false'
+      - 'NETWORK_COVALENT_API_KEY=${COVALENT_API_KEY}'
+      - 'QUARKUS_DATASOURCE_USERNAME=pg'
+      - 'QUARKUS_DATASOURCE_PASSWORD=pwd'
+      - 'QUARKUS_DATASOURCE_JDBC_URL=jdbc:postgresql://postgresql:5432/freeport'
+      - 'NETWORK_CHAIN_ID=80001'
+      - 'CONTRACTS_FREEPORT_ADDRESS=0xC59Af7FbE4553e07aA668C1A13CAa78Cd4550579'
+      - 'CONTRACTS_FREEPORT_FIRST_BLOCK_NUMBER=23478426'
+      - 'CONTRACTS_FIAT_GATEWAY_ADDRESS=0xE8949692827C3034c6fF185a38c192ca3059f6e5'
+      - 'CONTRACTS_FIAT_GATEWAY_FIRST_BLOCK_NUMBER=23478486'
+      - 'CONTRACTS_AUCTION_ADDRESS=0x8B05131559a510f60f0A496B4428D449390A3f00'
+      - 'CONTRACTS_AUCTION_FIRST_BLOCK_NUMBER=23478590'
+      - 'CONTRACTS_NFT_ATTACHMENT_ADDRESS=0x2e8538913dEF3abAC5c4fCFAD7F40722A19099Ee'
+      - 'CONTRACTS_NFT_ATTACHMENT_FIRST_BLOCK_NUMBER=23478609'
+      - 'QUARKUS_LOG_CONSOLE_JSON=false'
+    depends_on:
+      - 'postgresql'
+  freeport-api:
+    container_name: 'freeport-api'
+    image: 'cerebellumnetwork/freeport-api:dev-latest'
+    ports:
+      - '8080:8080'
+    environment:
+      - 'QUARKUS_DATASOURCE_USERNAME=pg'
+      - 'QUARKUS_DATASOURCE_PASSWORD=pwd'
+      - 'QUARKUS_DATASOURCE_REACTIVE_URL=postgresql://postgresql:5432/freeport'
+      - 'QUARKUS_LOG_CONSOLE_JSON=false'
+    depends_on:
+      - 'freeport-sc-event-listener'
+  freeport-ddc-proxy:
+    container_name: 'freeport-ddc-proxy'
+    image: 'cerebellumnetwork/freeport-ddc-proxy:dev-latest'
+    ports:
+      - '8081:8080'
+    environment:
+      - 'FREEPORT_URL=http://freeport-api:8080'
+      - 'DDC_BOOT_NODES=http://ddc-node-0:8888,http://ddc-node-1:8881,http://ddc-node-2:8882'
+      - 'QUARKUS_S3_ENDPOINT_OVERRIDE=http://s3:9000'
+      - 'QUARKUS_S3_PATH_STYLE_ACCESS=true'
+      - 'QUARKUS_S3_AWS_REGION=us-east-1'
+      - 'QUARKUS_S3_AWS_CREDENTIALS_TYPE=static'
+      - 'QUARKUS_S3_AWS_CREDENTIALS_STATIC_PROVIDER_ACCESS_KEY_ID=test-key'
+      - 'QUARKUS_S3_AWS_CREDENTIALS_STATIC_PROVIDER_SECRET_ACCESS_KEY=test-secret'
+      - 'QUARKUS_LOG_CONSOLE_JSON=false'
+    depends_on:
+      - 'init-ddc'
+      - 's3'
+      - 'freeport-api'
